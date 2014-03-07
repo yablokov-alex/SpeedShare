@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SpeedShare examples</title>
+</head>
+<body style="background-color:lightgray">
+    <div class="speedshare-auto-init"
+         data-theme="icon"
+         data-gplus-url="http://appleman.com.ua/speedshare/googleplus?url={link}&callback=services.gplus.cb"></div>
+
+    <div class="speedshare-auto-init" data-theme="icon-count"></div>
+
+    <div class="speedshare-auto-init" data-theme="minimal"></div>
+
+    <div class="speedshare-auto-init" data-theme="normal"></div>
+
+    <div class="speedshare-auto-init" data-theme="vertical"></div>
+
+    <div id="test"></div>
+
+
+    <script src="speedshare-1.0.0.min.js"></script>
+    <script>
+        var share = new SpeedShare({
+            element: 'test',
+            shares: ['facebook', 'twitter', 'odnoklassniki', 'gplus', 'vkontakte'],
+            theme: 'minimal'
+        });
+        share.Init();
+    </script>
+</body>
+</html>
