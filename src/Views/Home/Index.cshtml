@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="speedshare-auto-init"
+     data-theme="icon"
+     data-gplus-url="http://appleman.com.ua/speedshare/googleplus?url={link}&callback=services.gplus.cb"
+     data-link="http://habrahabr.ru"></div>
+
+<div class="speedshare-auto-init" data-theme="icon-count" data-link="http://habrahabr.ru"></div>
+
+<div class="speedshare-auto-init" data-theme="minimal" data-link="http://habrahabr.ru"></div>
+
+<div class="speedshare-auto-init" data-theme="normal" data-link="http://habrahabr.ru"></div>
+
+<div class="speedshare-auto-init" data-theme="vertical" data-link="http://habrahabr.ru"></div>
+
+<div id="test"></div>
+
+@Scripts.Render("~/bundles/speedshare")
+<script>
+    var share = new SpeedShare({
+        element: 'test',
+        shares: ['facebook', 'twitter', 'odnoklassniki', 'gplus', 'vkontakte'],
+        theme: 'minimal',
+        link: 'http://habrahabr.ru'
+    });
+    share.Init();
+</script>
+
+
+
