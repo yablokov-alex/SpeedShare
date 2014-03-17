@@ -11,8 +11,7 @@
         theme: options.theme || "minimal",
         shares: options.shares || ['facebook', 'twitter', 'vkontakte', 'odnoklassniki', 'gplus'],
         link: options.link || window.location.href,
-        title: options.title || document.title,
-        buttons: options.buttons || {}
+        title: options.title || document.title
     };
 
 
@@ -254,7 +253,7 @@ Element.prototype.data = function () {
                 
             }
         }
-        console.log(attr.nodeName + ':' + attr.nodeValue);
+        //console.log(attr.nodeName + ':' + attr.nodeValue);
     }
 
 
@@ -281,17 +280,6 @@ DOMReady(function () {
         options.element = id;
 
 
-        //var options = {
-        //    element: id,
-        //    language: item.getAttribute('data-language'),
-        //    theme: item.getAttribute('data-theme'),
-        //    shares: item.getAttribute('data-service') && item.getAttribute('data-service').split(','),
-        //    buttons: {
-        //        gplus: {
-        //            url : item.getAttribute('data-gplus-url')
-        //        }
-        //    }
-        //};
 
         var share = new SpeedShare(options);
         share.Init();

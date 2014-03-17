@@ -128,7 +128,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\b-share_counter_small.png" />
     <Content Include="Scripts\speedshare-1.0.0.js" />
-    <Content Include="Scripts\speedshare-1.0.0.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
