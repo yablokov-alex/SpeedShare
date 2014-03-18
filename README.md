@@ -1,15 +1,15 @@
 SpeedShare social media buttons
 ==========
 
-SpeedShare is a JavaScript plugin, which allows you to create nice and extremly fast widgets fro Facebook, Twitter, Google Plus (with ASP.NET MVC, PHP or just using external link). See live <a href="http://yablokov-alex.github.io/SpeedShare/">example</a>
+SpeedShare is a JavaScript plugin, which allows you to create nice and extremly fast widgets fro Facebook, Twitter, Google Plus (for Google Plus you need to create backend service that returns JSON with shares count). See live <a href="http://yablokov-alex.github.io/SpeedShare/" targer="_blank">example</a>
 
 <img src="https://raw.github.com/yablokov-alex/speedshare/master/images/social.jpg" />
 
 ## Why SpeedShare is better then other plugins?
 
-1. **Fast**. It loads just one js file and make async JSON calls to each social network. There is no need to load additional images, css or js.
+1. **Fast**. It loads just one js file and make async JSON calls to each social network. There is no need to load additional images, css or js
 2. **Lightwight**. Just 12 kb
-3. **Written on JavaScript**. So there is no dependency on other JS frameworks like jQuery.
+3. **Written on JavaScript**. So there is no dependency on any JS frameworks like jQuery
 4. **Looks good**
 5. **Easy to setup**
 
@@ -21,7 +21,7 @@ You need add js file:
 <script src="speedshare-1.0.0.min.js"></script>
 ```
 
-And then use one of two aproaches
+And then use one of two approaches
 
 
 ```html
@@ -43,7 +43,7 @@ or
 ## Options
 
 Parameter | Type | HTML | Description
---- | --- | ---
+--- | --- | --- | ---
 element | String | id | ID of the element, which needs to be initialized.
 theme | String | data-theme | Theme of the block. Possible values: 'icon', 'icon-count', 'minimal', 'normal', 'vertical'. By default it's 'minimal'. See example.
 shares | Array | data-shares | List of services. The default values: ['facebook', 'twitter', 'vkontakte', 'odnoklassniki', 'gplus']
@@ -81,6 +81,6 @@ gplus | String | data-gplus | Url to get google+ shares count. The resul is JSON
      data-theme="icon-count"
      data-gplus="http://appleman.com.ua/speedshare/googleplus?url={link}&callback=services.gplus.cb"
      data-link="https://github.com"
-     data-title="GitHub",
+     data-title="GitHub"
      data-shares="facebook,twitter,odnoklassniki,gplus,vkontakte"></div>
 ```
