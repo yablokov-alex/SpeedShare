@@ -3,74 +3,116 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <title>Speedshare by yablokov-alex</title>
   </head>
 
   <body>
-    <header>
+    <div id="container">
       <div class="inner">
-        <h1>Speedshare</h1>
-        <h2>Fast social media sharing buttons</h2>
-        <a href="https://github.com/yablokov-alex/SpeedShare" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
+        <header>
+          <h1>Speedshare</h1>
+          <h2>Fast social media sharing buttons</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/yablokov-alex/SpeedShare/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/yablokov-alex/SpeedShare/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/yablokov-alex/SpeedShare" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
           <h3>
 <a name="what-is-speedshare" class="anchor" href="#what-is-speedshare"><span class="octicon octicon-link"></span></a>What is SpeedShare</h3>
 
 <p>SpeedShare is a JavaScript plugin, which allows you to create nice and extremly fast widgets fro Facebook, Twitter, Google Plus (with ASP.NET MVC, PHP or just using external link).</p>
 
-<h3>
-<a name="why-shoul-you-use-it" class="anchor" href="#why-shoul-you-use-it"><span class="octicon octicon-link"></span></a>Why shoul you use it?</h3>
+<h2>
+<a name="why-speedshare-is-better-then-other-plugins" class="anchor" href="#why-speedshare-is-better-then-other-plugins"><span class="octicon octicon-link"></span></a>Why SpeedShare is better then other plugins?</h2>
 
 <ol>
-<li>It's lite</li>
-</ol><h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<li>
+<strong>Fast</strong>. It loads just one js file and make async JSON calls to each social network. There is no need to load additional images, css or js</li>
+<li>
+<strong>Lightwight</strong>. Just 12 kb</li>
+<li>
+<strong>Written on JavaScript</strong>. So there is no dependency on any JS frameworks like jQuery</li>
+<li><strong>Looks good</strong></li>
+<li><strong>Easy to setup</strong></li>
+</ol><h2>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h5>
+<a name="icon" class="anchor" href="#icon"><span class="octicon octicon-link"></span></a>icon</h5>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"speedshare-auto-init"</span> <span class="na">data-theme=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<div></div>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h5>
+<a name="icon-count" class="anchor" href="#icon-count"><span class="octicon octicon-link"></span></a>icon-count</h5>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"speedshare-auto-init"</span> <span class="na">data-theme=</span><span class="s">"icon-count"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<div></div>
+
+<h5>
+<a name="minimal" class="anchor" href="#minimal"><span class="octicon octicon-link"></span></a>minimal</h5>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"speedshare-auto-init"</span> <span class="na">data-theme=</span><span class="s">"minimal"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<div></div>
+
+<h5>
+<a name="normal" class="anchor" href="#normal"><span class="octicon octicon-link"></span></a>normal</h5>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"speedshare-auto-init"</span> <span class="na">data-theme=</span><span class="s">"normal"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<div></div>
+
+<h5>
+<a name="vertical" class="anchor" href="#vertical"><span class="octicon octicon-link"></span></a>vertical</h5>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"speedshare-auto-init"</span> <span class="na">data-theme=</span><span class="s">"vertical"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<div></div>
+
+<p>For more information see <a href="https://github.com/yablokov-alex/SpeedShare">https://github.com/yablokov-alex/SpeedShare</a>.</p>
+
+
         </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/yablokov-alex/SpeedShare/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/yablokov-alex/SpeedShare/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+        <footer>
+          Speedshare is maintained by <a href="https://github.com/yablokov-alex">yablokov-alex</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
 
-          <p class="repo-owner"><a href="https://github.com/yablokov-alex/SpeedShare"></a> is maintained by <a href="https://github.com/yablokov-alex">yablokov-alex</a>.</p>
+                  <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-10627150-12");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
       </div>
     </div>
-
-  
   </body>
 </html>
