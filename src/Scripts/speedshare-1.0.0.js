@@ -11,7 +11,8 @@
         theme: options.theme || "minimal",
         shares: options.shares || ['facebook', 'twitter', 'vkontakte', 'odnoklassniki', 'gplus'],
         link: options.link || window.location.href,
-        title: options.title || document.title
+        title: options.title || document.title,
+        gplus: options.gplus || 'http://appleman.com.ua/speedshare/googleplus?url={link}&callback=services.gplus.cb'
     };
 
 
@@ -95,7 +96,7 @@
         },
 
         gplus: {
-            url: 'http://appleman.com.ua/speedshare/googleplus?url={link}&callback=services.gplus.cb',
+            url: params.gplus,
             popupUrl: 'https://plus.google.com/share?url={link}',
             popupWidth: 700,
             popupHeight: 500,
@@ -225,38 +226,15 @@ SpeedShare.css = ".share-button-counter{font-family:'Open Sans',arial,sans-serif
 // Extend element functionality
 // ******************************
 Element.prototype.data = function () {
-    var self = this;
+    var attr = this.attributes;
 
-    var data = {};
-    for (var i = 0; i < self.attributes.length; i++) {
-        var attr = self.attributes[i];
-
-        // if starts with data-
-        if (attr.nodeName.indexOf('data-') == 0) {
-            var dataName = attr.nodeName.substr(5, attr.nodeName.length - 5);
-
-            var objs = dataName.split('-');
-            var obj = data;
-            for (var j = 0; j < objs.length; j++) {
-                if (obj[objs[j]] == undefined) {
-
-                    // if last element
-                    if (j == objs.length - 1) {
-                        obj[objs[j]] = attr.nodeValue;
-                    } else {
-                        obj[objs[j]] = {};
-                    }
-                }
-
-                obj = obj[objs[j]];
-
-                
-            }
-        }
-        //console.log(attr.nodeName + ':' + attr.nodeValue);
-    }
-
-
+    var data = {
+        shares: attr['data-shares'] && attr['data-shares'].nodeValue.split(','),
+        theme: attr['data-theme'] && attr['data-theme'].nodeValue,
+        link: attr['data-link'] && attr['data-link'].nodeValue,
+        title: attr['data-title'] && attr['data-title'].nodeValue,
+        gplus: attr['data-gplus'] && attr['data-gplus'].nodeValue
+    };
     return data;
 };
 
