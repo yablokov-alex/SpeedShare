@@ -180,14 +180,14 @@ code {
 
 pre {
   padding: 20px;
-  background: #303030;
+  /*background: #303030;*/
   color: #f2f2f2;
   text-shadow: none;
   overflow: auto;
 }
 pre code {
   color: #f2f2f2;
-  background-color: #303030;
+  /*background-color: #303030;*/
   border: none;
   padding: 0;
 }
@@ -198,6 +198,11 @@ ul, ol, dl {
 
 
 /* COMMON STYLES */
+.speedshare-auto-init {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 30px;
+}
 
 hr {
   height: 1px;
